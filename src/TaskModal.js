@@ -14,6 +14,7 @@ const TaskModal = ({ showModal, closeModal, addTask, updateTask, currentTask, ta
   const [errors, setErrors] = useState({});
 
   useEffect(() => {
+    setErrors({});
     if (showModal) {
       if (currentTask) {
         setTask(currentTask);
